@@ -1,0 +1,5 @@
+const Header = () => {
+    return(<Header>헤더</Header>);
+};
+
+export default Header;
