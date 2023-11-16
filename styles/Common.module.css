@@ -1,0 +1,10 @@
+.buttonBasic {
+    background-color: var(--main-color);
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+}

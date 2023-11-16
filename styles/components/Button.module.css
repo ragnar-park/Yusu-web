@@ -1,0 +1,47 @@
+.buttonM {
+    /* 공통화 필요 */
+    background-color: var(--main-color);
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    color: #ffffff;
+
+    font-size: 1em;
+    padding: 0.75em 1.5em;
+}
+
+.buttonS {
+    /* 공통화 필요 */
+    background-color: var(--main-color);
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    color: #ffffff;
+
+    font-size: 0.8em;
+    padding: 0.5em 1em;
+}
+
+.buttonL {
+    /* 공통화 필요 */
+    background-color: var(--main-color);
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    color: #ffffff;
+
+    font-size: 1.2em;
+    padding: 1em 2em;
+}

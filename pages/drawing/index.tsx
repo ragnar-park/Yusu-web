@@ -1,10 +1,15 @@
-import Button from "@/components/ui/Button";
+import Button from "@/components/ui/ButtonM";
 import Header from "@/components/Header";
+import ButtonM from "@/components/ui/ButtonM";
+import ButtonS from "@/components/ui/ButtomS";
+import ButtonL from "@/components/ui/ButtonL";
 
 const Drawing = () => {
     return(
         <div>
-            <Button />
+            <ButtonM  buttonText='테스트 버튼' onClick={() => {}}/>
+            <ButtonS  buttonText='테스트 버튼' onClick={() => {}}/>
+            <ButtonL  buttonText='테스트 버튼' onClick={() => {}}/>
         </div>
     );
 }
