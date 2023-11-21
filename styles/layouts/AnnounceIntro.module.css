@@ -3,4 +3,17 @@
     height: 100vh;
     /*임시 컬러*/
     background-color: deeppink;
+    /*transition: opacity 0.5s, transform 0.5s;*/
+    /*position: relative;*/
+}
+
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(100%);
 }
