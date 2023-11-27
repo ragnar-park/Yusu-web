@@ -1,8 +1,10 @@
 import styles from '@/styles/layouts/StatisticsIntro.module.css';
 
-const StatisticsIntro = () => {
+const StatisticsIntro = (props: {
+    statisticsIntroRef
+}) => {
     return(
-        <div className={styles.statisticsIntroWrap}>statisticsIntro</div>
+        <div ref={props.statisticsIntroRef} className={styles.statisticsIntroWrap}>statisticsIntro</div>
     );
 }
 

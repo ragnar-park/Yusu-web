@@ -4,11 +4,18 @@ import MainIntro from "@/layouts/intro/mainIntro";
 import StatisticsIntro from "@/layouts/intro/statisticsIntro";
 import AnnounceIntro from "@/layouts/intro/announceIntro";
 const Intro = () => {
+    const statisticsIntroRef = useRef(null);
+    const scrollToStatisticsIntro = () => {
+        if (statisticsIntroRef.current) {
+            statisticsIntroRef.current.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+
 
     return (
         <Fragment>
-            <MainIntro  />
-            <StatisticsIntro />
+            <MainIntro  onClickNextIntro={scrollToStatisticsIntro}/>
+            <StatisticsIntro statisticsIntroRef={statisticsIntroRef}/>
             <AnnounceIntro  />
         </Fragment>
         // 스크롤바를 없애고 스크롤시 페이지 전환 되는 것 같은 효과에서
