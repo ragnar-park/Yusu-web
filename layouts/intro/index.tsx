@@ -14,7 +14,8 @@ const Intro = () => {
 
     return (
         <Fragment>
-            <MainIntro  onClickNextIntro={scrollToStatisticsIntro}/>
+            {/*테스트를 위해 잠시 props를 고의로 덜 전달*/}
+            <MainIntro   />
             <StatisticsIntro statisticsIntroRef={statisticsIntroRef}/>
             <AnnounceIntro  />
         </Fragment>

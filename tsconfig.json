@@ -19,6 +19,12 @@
     "noUnusedLocals": true,
     "noImplicitReturns": true,
     "strictFunctionTypes": true,
+
+    // 컴포넌트 관련 설정을 위한 임시 추가
+    "strictPropertyInitialization": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+
     "paths": {
       "@/*": ["./*"]
     }
