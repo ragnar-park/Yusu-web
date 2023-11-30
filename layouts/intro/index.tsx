@@ -3,11 +3,13 @@ import styles from '@/styles/layouts/Intro.module.css';
 import MainIntro from "@/layouts/intro/mainIntro";
 import StatisticsIntro from "@/layouts/intro/statisticsIntro";
 import AnnounceIntro from "@/layouts/intro/announceIntro";
+
 const Intro = () => {
-    const statisticsIntroRef = useRef(null);
+    const statisticsIntroRef = useRef<HTMLElement | null>(null);
     const scrollToStatisticsIntro = () => {
-        if (statisticsIntroRef.current) {
-            statisticsIntroRef.current.scrollIntoView({ behavior: 'smooth' });
+        const element = statisticsIntroRef.current;
+        if (element) {
+            element.scrollIntoView({behavior: 'smooth'});
         }
     }
 
@@ -15,9 +17,9 @@ const Intro = () => {
     return (
         <Fragment>
             {/*테스트를 위해 잠시 props를 고의로 덜 전달*/}
-            <MainIntro   />
+            <MainIntro onClickNextIntro={scrollToStatisticsIntro}/>
             <StatisticsIntro statisticsIntroRef={statisticsIntroRef}/>
-            <AnnounceIntro  />
+            <AnnounceIntro/>
         </Fragment>
         // 스크롤바를 없애고 스크롤시 페이지 전환 되는 것 같은 효과에서
         // 스크롤바 유지하 되 꽉찬 컴포넌트들에 아래 버튼을 통해 전환 되는 효과를 추가 (사용성 강화)
