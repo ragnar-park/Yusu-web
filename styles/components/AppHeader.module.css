@@ -1,0 +1,12 @@
+/* header page css*/
+
+.headerWrap {
+    width: 100%;
+    height: 60px;
+    z-index: var(--nav--index);
+    position: fixed;
+
+    /* 임시 */
+    border: 1px solid red;
+}
+
