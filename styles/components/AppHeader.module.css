@@ -5,8 +5,9 @@
     height: 60px;
     z-index: var(--nav--index);
     position: fixed;
+    background-color: #fff;
 
     /* 임시 */
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 

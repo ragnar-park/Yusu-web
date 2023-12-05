@@ -1,5 +1,5 @@
 import styles from '@/styles/components/NavContainer.module.css';
-import Link from "next/link";
+import MenuList from "@/components/AppHeader/NavContainer/MenuList";
 
 const NavContainer = () => {
     return (
@@ -9,24 +9,7 @@ const NavContainer = () => {
                 <div className={styles.navLogo}></div>
             </div>
             <div className={styles.navRight}>
-                {/* TODO 분리 필요*/}
-                <ul className={styles.navUl}>
-                    <li>
-                        <Link href='#'>
-                            소개
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href='#'>
-                            유기동물지도
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href='#'>
-                            실시간유기동물통계
-                        </Link>
-                    </li>
-                </ul>
+                <MenuList/>
             </div>
         </nav>
     );

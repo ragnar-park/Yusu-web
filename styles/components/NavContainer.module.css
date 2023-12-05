@@ -6,11 +6,11 @@
     margin: 0 auto;
     display: flex;
 
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
 }
 
 .navLeft {;
-    border: 1px solid deepskyblue;
+    /*border: 1px solid deepskyblue;*/
 }
 
 .navLogo {
@@ -20,24 +20,8 @@
 }
 
 .navRight {
-    border: 1px solid deeppink;
+    /*border: 1px solid deeppink;*/
     display: flex;
     flex: 1;
     justify-content: flex-end;
 }
-
-.navUl {
-    display: flex;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-.navUl li {
-    margin: 0;
-    padding: 12px 10px;
-    color: #4E5968;
-}
-
-
